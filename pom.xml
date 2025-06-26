@@ -3,7 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
   <artifactId>JavaPro_3.1.25_2</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>Task_4</module>
+    <module>Task_4.1</module>
+  </modules>
   <name>Archetype - JavaPro_3.1.25_2</name>
   <url>http://maven.apache.org</url>
   <properties>
