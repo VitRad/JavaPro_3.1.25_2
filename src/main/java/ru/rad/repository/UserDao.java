@@ -1,9 +1,9 @@
-package ru.radionov.repository;
+package ru.rad.repository;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-import ru.radionov.entity.User;
+import ru.rad.entity.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

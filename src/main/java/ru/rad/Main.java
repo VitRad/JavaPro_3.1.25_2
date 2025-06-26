@@ -1,16 +1,12 @@
-package ru.radionov;
+package ru.rad;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import ru.radionov.configuration.Config;
-import ru.radionov.entity.User;
-import ru.radionov.service.UserService;
+import ru.rad.configuration.Config;
+import ru.rad.entity.User;
+import ru.rad.service.UserService;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Calendar;
 import java.util.List;
 
 @ComponentScan

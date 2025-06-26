@@ -1,4 +1,4 @@
-package ru.radionov.configuration;
+package ru.rad.configuration;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.core.JdbcTemplate;
-import ru.radionov.repository.UserDao;
-import ru.radionov.service.UserService;
+import ru.rad.repository.UserDao;
+import ru.rad.service.UserService;
 
 import javax.sql.DataSource;
 

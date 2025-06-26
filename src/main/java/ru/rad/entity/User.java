@@ -1,4 +1,4 @@
-package ru.radionov.entity;
+package ru.rad.entity;
 
 public class User {
     private Long id;

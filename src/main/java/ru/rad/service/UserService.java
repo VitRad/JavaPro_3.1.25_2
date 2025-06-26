@@ -1,8 +1,8 @@
-package ru.radionov.service;
+package ru.rad.service;
 
 import org.springframework.stereotype.Service;
-import ru.radionov.entity.User;
-import ru.radionov.repository.UserDao;
+import ru.rad.entity.User;
+import ru.rad.repository.UserDao;
 
 import java.util.List;
 
