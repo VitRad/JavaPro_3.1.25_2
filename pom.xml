@@ -8,6 +8,7 @@
   <modules>
     <module>Task_4</module>
     <module>Task_4.1</module>
+    <module>task_4.2</module>
   </modules>
   <name>Archetype - JavaPro_3.1.25_2</name>
   <url>http://maven.apache.org</url>
