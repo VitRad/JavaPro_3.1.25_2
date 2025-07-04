@@ -8,7 +8,6 @@ import ru.rad.service.UserService;
 import java.util.List;
 
 @Component
-//@Service
 public class Runner implements CommandLineRunner {
 
     private final UserService userService;
