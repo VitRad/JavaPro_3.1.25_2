@@ -1,19 +1,23 @@
 package ru.rad;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import ru.rad.configuration.Config;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 import ru.rad.entity.User;
 import ru.rad.service.UserService;
 
 import java.util.List;
 
-@ComponentScan
-public class Main {
-    public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
-        UserService userService = context.getBean(UserService.class);
+@Component
+public class Runner implements CommandLineRunner {
+
+    private final UserService userService;
+
+    public Runner(UserService userService) {
+        this.userService = userService;
+    }
+
+    @Override
+    public void run(String... args) {
         String prefixName = "name_";
         long currentTime = System.currentTimeMillis();
 
@@ -43,5 +47,6 @@ public class Main {
         //Получение всех записей для проверки, что удаленной записи нет в списке
         List<User> usersAfterDelete = userService.getAllUsers();
         System.out.println(usersAfterDelete);
+
     }
 }
