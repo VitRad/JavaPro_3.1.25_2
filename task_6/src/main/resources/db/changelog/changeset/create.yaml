@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 101
+      author: Rad
+  - include:
+      file: drop_create_users.sql
+      relativeToChangelogFile: true
+  - changeSet:
+      id: 102
+      author: Rad
+  - include:
+      file: filing_table_users.sql
+      relativeToChangelogFile: true
+  - changeSet:
+      id: 103
+      author: Rad
+  - include:
+      file: drop_create_products.sql
+      relativeToChangelogFile: true
+  - changeSet:
+      id: 104
+      author: Rad
+  - include:
+      file: filing_table_products.sql
+      relativeToChangelogFile: true

@@ -10,6 +10,7 @@
         <module>Task_4.1</module>
         <module>task_4.2</module>
         <module>task_5</module>
+        <module>task_6</module>
     </modules>
     <name>Archetype - JavaPro_3.1.25_2</name>
     <properties>
