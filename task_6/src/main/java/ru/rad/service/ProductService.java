@@ -8,7 +8,6 @@ import ru.rad.repository.ProductRepository;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ProductService {
@@ -20,13 +19,12 @@ public class ProductService {
 
     public List<ResponseProductDto> getProductsByUserId(Long userId) {
         List<ResponseProductDto> responseList = new ArrayList<>();
-        Optional<List<Products>> optionalProductList = productRepository.findProductsByUserId(userId);
-        optionalProductList.orElse(new ArrayList<>())
-                .forEach(p -> responseList.add(new ResponseProductDto(
-                        p.getAccount(),
-                        p.getBalance(),
-                        p.getProductType(),
-                        new ResponseUserDto(p.getUser().getUserName()))));
+        List<Products> productList = productRepository.findProductsByUserId(userId);
+        productList.forEach(p -> responseList.add(new ResponseProductDto(
+                p.getAccount(),
+                p.getBalance(),
+                p.getProductType(),
+                new ResponseUserDto(p.getUser().getUserName()))));
 
         return responseList;
     }

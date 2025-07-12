@@ -1,7 +1,7 @@
 package ru.rad.dto;
 
 public class ResponseUserDto {
-    String userName;
+    private String userName;
 
     public String getUserName() {
         return userName;
